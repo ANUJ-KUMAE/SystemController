@@ -1,7 +1,6 @@
 const Electrician = require("../Models/ElectricianModel");
 const CustomerModel = require("../Models/CustomerModel");
 
-
 const AutomaticComplaint = async (req, resp, next) => {
   try {
     // Get available electricians
@@ -41,11 +40,21 @@ const AutomaticComplaint = async (req, resp, next) => {
       // Save the updated complaint
       await complaint.save();
 
+      // Mark the assigned electrician as unavailable
+      electrician.isAvailable = false;
+      await electrician.save();
+
       // Update round-robin index
       currentElectricianIndex =
         (currentElectricianIndex + 1) % electricians.length;
-    }
 
+      if (
+        currentElectricianIndex === 0 &&
+        electricians.every((e) => !e.isAvailable)
+      ) {
+        break;
+      }
+    }
 
     return resp.status(201).json({
       message: `Complaint assigned to successfully`,
