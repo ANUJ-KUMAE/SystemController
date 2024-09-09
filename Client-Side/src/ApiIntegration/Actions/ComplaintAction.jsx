@@ -132,7 +132,7 @@ export const DeleteComplaintAction = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.delete(
-      `https://system-controllerapi.vercel.app/Api/Customer//delete/complaint/${id}`,
+      `https://system-controllerapi.vercel.app/Api/Customer/delete/complaint/${id}`,
       configData
     );
 
