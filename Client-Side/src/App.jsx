@@ -19,6 +19,7 @@ import RegisteredElectrician from "./Components/ElectricianManagement/Electricia
 import ViewRegisterUser from "./Components/ElectricianManagement/ElectricianPage/Electrician/ViewRegisterUser";
 import LoginAuth from "./ProtectedRoutes/LoginAuth";
 import CustomerServices from "./Components/Customer/CustomerServices";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route element={<LoginAuth />}>
           <Route path="/customer/complaint/page" element={<CustomerServices />}>
             {/* <Route
@@ -48,9 +50,9 @@ function App() {
             element={<ElectricianDashboard />}
           />
           <Route
-              path="viewSingle/complaint/:id"
-              element={<ViewSingleDetail />}
-            />
+            path="viewSingle/complaint/:id"
+            element={<ViewSingleDetail />}
+          />
 
           <Route path="/Admin/Dashboard" element={<ElectricianSidebar />}>
             <Route path="adminCustomers" element={<ComplaintPage />} />
