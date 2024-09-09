@@ -11,7 +11,7 @@ const ResolveComplaintRouter = require("./Router/ResolveComplaintRouter");
 const AuthRouter = require("./Router/LoginAuthenticationRouter");
 
 var corsOption = {
-  origin: "http://localhost:5173",
+  origin: "https://system-controllerclientside.vercel.app",
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
