@@ -20,6 +20,7 @@ import ViewRegisterUser from "./Components/ElectricianManagement/ElectricianPage
 import LoginAuth from "./ProtectedRoutes/LoginAuth";
 import CustomerServices from "./Components/Customer/CustomerServices";
 import Contact from "./Components/Contact/Contact";
+import Profile from "./Components/Profile/Profile";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/profile" element={<Profile />} />
         <Route element={<LoginAuth />}>
           <Route path="/customer/complaint/page" element={<CustomerServices />}>
             {/* <Route
