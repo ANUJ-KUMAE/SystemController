@@ -1,0 +1,134 @@
+/* General container styling */
+.about-container {
+  padding: 2rem;
+  background-color: #f4f7f6;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header section styling */
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #004d80;
+  margin-bottom: 1.5rem;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Images section styling */
+.about-images-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image:hover {
+  transform: scale(1.1);
+}
+
+/* Key Features section */
+.about-features {
+  background-color: #e8f1f2;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.about-features h2 {
+  font-size: 2rem;
+  color: #006d96;
+  margin-bottom: 1rem;
+}
+
+.about-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-features li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about-features strong {
+  color: #004d80;
+}
+
+/* Benefits section */
+.about-benefits {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid #004d80;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.about-benefits h2 {
+  font-size: 2rem;
+  color: #004d80;
+  margin-bottom: 1rem;
+}
+
+.about-benefits p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Image section at the bottom */
+.about-image-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-image-section img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-image-section figcaption {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .about-images-container {
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+  .about-image-section img {
+    width: 100%;
+  }
+}

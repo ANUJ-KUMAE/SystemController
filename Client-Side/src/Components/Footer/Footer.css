@@ -1,0 +1,108 @@
+.Footer-Container {
+  background-color: #20232a;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.footer-information {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.footer-Contacts-info {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer-Contacts-info h4 {
+  color: #61dafb;
+  margin-bottom: 1rem;
+}
+
+.footer-Contacts-info p,
+.footer-Contacts-info ul {
+  margin: 0.5rem 0;
+}
+
+.footer-Contacts-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-Contacts-info ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-Contacts-info ul li a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.footer-Contacts-info ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media-contacts ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media-contacts ul li {
+  margin-right: 1rem;
+}
+
+.social-media-icons {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-media-icons:hover {
+  color: #61dafb;
+}
+
+.message-box {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.message-box-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.message-box-button input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.message-box-button button {
+  background-color: #61dafb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.message-box-button button:hover {
+  background-color: #4db8e5;
+}
+
+.footer-copyright {
+  margin-top: 2rem;
+  border-top: 1px solid #444;
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}

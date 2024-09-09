@@ -1,0 +1,59 @@
+/* Container for the entire section */
+.dashboard-section {
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+/* Main container for dashboard content */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Loading and error text styles */
+.loading-text,
+.error-text {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* No complaints found text */
+.no-complaints-text {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Individual complaint card styling */
+.complaint-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card title styling */
+.card-title {
+  margin: 0;
+  color: #333;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Card body styling */
+.card-body p {
+  margin: 8px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Bold text for labels */
+.card-body p strong {
+  color: #333;
+  font-weight: bold;
+}

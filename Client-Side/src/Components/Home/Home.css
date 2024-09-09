@@ -1,0 +1,118 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.home-container-header {
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.home-search-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem;
+  height: 50vh;
+  position: relative;
+}
+
+.home-search-section::before {
+  content: "";
+  background: url("../../Images/house.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.explore-button-section {
+  margin-top: 1.5rem;
+}
+
+.explore-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+/* Service section styling */
+.Home-section-details-part {
+  margin-top: 3rem;
+  padding: 5rem 0;
+}
+
+.all-services-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.services-data {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+  width: 30%; 
+  transition: transform 0.3s ease;
+  color: blue;
+}
+
+.services-data:hover {
+  transform: scale(1.05);
+}
+
+.service-img {
+  width: 100%;
+  height: auto;
+}
+
+.service-info {
+  padding: 1rem;
+}
+
+.service-name {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.service-description {
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/*Media Queries*/
+ 
+@media screen and (max-width: 580px) 
+{
+  .home-container {
+     padding: 1rem;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .home-search-section 
+  {
+     height: 30vh;
+  }
+}
