@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import profile from "../../Images/profile.jpg"
 import "./Profile.css"
+import { FaCircleUser } from "react-icons/fa6";
 
 const Profile = () => {
 
