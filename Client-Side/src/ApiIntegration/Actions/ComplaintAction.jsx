@@ -33,7 +33,7 @@ export const AddComplaintAction =
       };
 
       const { data } = await axios.post(
-        "http://localhost:8965/Api/Customer/create/complaint",
+        "https://system-controllerapi.vercel.app/Api/Customer/create/complaint",
         { customerName, customerAddress, category, description, mobile },
         configData
       );
@@ -67,7 +67,7 @@ export const GetAllCompaintDataAction = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "http://localhost:8965/Api/Customer/All/Complaint",
+      "https://system-controllerapi.vercel.app/Api/Customer/All/Complaint",
       configData
     );
 
@@ -98,7 +98,7 @@ export const GetSingleComplaintAction = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `http://localhost:8965/Api/Customer/get/SingleComplaint/${id}`,
+      `https://system-controllerapi.vercel.app/Api/Customer/get/SingleComplaint/${id}`,
       configData
     );
 
@@ -132,7 +132,7 @@ export const DeleteComplaintAction = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.delete(
-      `http://localhost:8965/Api/Customer//delete/complaint/${id}`,
+      `https://system-controllerapi.vercel.app/Api/Customer//delete/complaint/${id}`,
       configData
     );
 

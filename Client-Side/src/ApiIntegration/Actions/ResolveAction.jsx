@@ -20,7 +20,7 @@ export const ResolveComplaintAction = (complaintId) => async (dispatch) => {
     };
 
     const { data } = await axios.put(
-      `http://localhost:8965/Api/resolve/electrician/${complaintId}`,
+      `https://system-controllerapi.vercel.app/Api/resolve/electrician/${complaintId}`,
       configData
     );
     dispatch({ type: RESOLVE_COMPLAINT_SUCCESS, payload: data.message });

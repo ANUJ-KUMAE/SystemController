@@ -34,7 +34,7 @@ export const Registeruser =
       };
 
       const { data } = await axios.post(
-        "http://localhost:8965/Api/Auth/RegisterUser",
+        "https://system-controllerapi.vercel.app/Api/Auth/RegisterUser",
         { userName, email, phone, password, userType },
         config
       );
@@ -64,7 +64,7 @@ export const LoginUser = (email, password, userType) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:8965/Api/Auth/LoginUser",
+      "https://system-controllerapi.vercel.app/Api/Auth/LoginUser",
       { email, password, userType },
       config
     );
@@ -98,7 +98,7 @@ export const UserProfile = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "http://localhost:8965/Api/Auth/loginuser/Data",
+      "https://system-controllerapi.vercel.app/Api/Auth/loginuser/Data",
       configData
     );
 
@@ -150,7 +150,7 @@ export const AllRegisteredElectricianAction = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "http://localhost:8965/Api/Auth/Allusers",
+      "https://system-controllerapi.vercel.app/Api/Auth/Allusers",
       configData
     );
 
@@ -181,7 +181,7 @@ export const GetSingleUserAction = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `http://localhost:8965/Api/Auth/register/user/singleData/${id}`,
+      `https://system-controllerapi.vercel.app/Api/Auth/register/user/singleData/${id}`,
       configData
     );
 

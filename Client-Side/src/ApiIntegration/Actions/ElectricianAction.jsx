@@ -31,7 +31,7 @@ export const RegisterElectricianAction =
       };
 
       const { data } = await axios.post(
-        "http://localhost:8965/Api/Electrician/register/electrician",
+        "https://system-controllerapi.vercel.app/Api/Electrician/register/electrician",
         { name, contact, electricianId },
         configData
       );
@@ -64,7 +64,7 @@ export const AllElectriciandataAction = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "http://localhost:8965/Api/Electrician/view/electrician",
+      "https://system-controllerapi.vercel.app/Api/Electrician/view/electrician",
       configData
     );
 
@@ -95,7 +95,7 @@ export const SingleElectricianAction = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `http://localhost:8965/Api/Electrician/electrician/singleDetail/${id}`,
+      `https://system-controllerapi.vercel.app/Api/Electrician/electrician/singleDetail/${id}`,
       configData
     );
 
@@ -126,7 +126,7 @@ export const DeleteComplaintAdminAction = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.delete(
-      `http://localhost:8965/Api/Electrician/delete/electrician/${id}`,
+      `https://system-controllerapi.vercel.app/Api/Electrician/delete/electrician/${id}`,
       configData
     );
 

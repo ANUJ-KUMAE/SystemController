@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 export const automaticComplaintAssignment = () => async (dispatch) => {
   try {
     const { data } = await axios.post(
-      "http://localhost:8965/Api/AutoComplaint/assign-complaints"
+      "https://system-controllerapi.vercel.app/Api/AutoComplaint/assign-complaints"
     );
 
     dispatch({
