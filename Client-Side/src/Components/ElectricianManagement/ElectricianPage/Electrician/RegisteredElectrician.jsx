@@ -51,7 +51,7 @@ const RegisteredElectrician = () => {
                             className="view-btn"
                             onClick={() => handleViewComplaint(electrician._id)}
                           >
-                            View
+                            Click To Add
                           </button>
                           
                         </td>

@@ -60,8 +60,7 @@ const AddElectrician = () => {
     }
 
     if (electricianRegisterSuccess) {
-      toast.success("Added Successfully");
-      navigate("/adminRegisteruser");
+      navigate("/Admin/Dashboard/adminRegisteruser");
       dispatch({ type: ELECTRICIAN_REGISTER_RESET });
     }
   }, [dispatch, error, toast, electricianRegisterSuccess]);
