@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div className="office-textdata">
                   <h5>EMAIL</h5>
-                  <p>urbanstays@gmail.com</p>
+                  <p>management@gmail.com</p>
                 </div>
               </div>
               <div className="office-details">

@@ -1,0 +1,126 @@
+/* General Styles */
+.Profile-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.User-profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.User-profile-image img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+.Authuser-Details {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-profile-icon {
+  margin-bottom: 1rem;
+}
+
+.profile-icon {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.Load-Login-user {
+  margin-bottom: 2rem;
+}
+
+.AuthUser-Data-lists {
+  margin-bottom: 1rem;
+}
+
+.AuthUser-Data-lists h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.AuthUser-Data-lists p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.update-cancel-button-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.Update-Button {
+  background-color: #28a745;
+}
+
+.Update-Button:hover {
+  background-color: #218838;
+}
+
+.Cancel-Button {
+  background-color: #dc3545;
+}
+
+.Cancel-Button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Profile-Container {
+    padding: 1rem;
+  }
+
+  .User-profile-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .Authuser-Details {
+    padding: 1rem;
+  }
+
+  .AuthUser-Data-lists h4 {
+    font-size: 0.9rem;
+  }
+
+  .AuthUser-Data-lists p {
+    font-size: 0.9rem;
+  }
+
+  .search-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
