@@ -21,6 +21,7 @@ import LoginAuth from "./ProtectedRoutes/LoginAuth";
 import CustomerServices from "./Components/Customer/CustomerServices";
 import Contact from "./Components/Contact/Contact";
 import Profile from "./Components/Profile/Profile";
+import Setting from "./Components/Customer/CustomerPages/Setting";
 
 function App() {
   return (
@@ -35,16 +36,9 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route element={<LoginAuth />}>
           <Route path="/customer/complaint/page" element={<CustomerServices />}>
-            {/* <Route
-              path="page"
-              element={<CustomerMainPage />}
-            /> */}
             <Route path="addComplaint" element={<AddComplaint />} />
             <Route path="viewComplaints" element={<ViewComplaint />} />
-            {/* <Route
-              path="viewSingle/complaint/:id"
-              element={<ViewSingleDetail />}
-            /> */}
+            <Route path="settings" element={<Setting />} />
           </Route>
 
           <Route

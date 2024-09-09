@@ -12,7 +12,6 @@ const Contact = () => {
         <section>
           <div className="Contact-Container">
             <div className="contact-view-image">
-              <p>LUXURY HOTEL EXPERIENCE</p>
               <h3>CONTACT US</h3>
             </div>
           </div>
